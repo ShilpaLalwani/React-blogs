@@ -1,6 +1,8 @@
 import React  from 'react';
 import {Link} from 'react-router-dom';
 import CreateArticle from '../CreateArticle';
+import Login from '../Login';
+
 
 const NavBar = () => {
     return    <nav className="topbar topbar-inverse topbar-expand-md topbar-sticky">
@@ -30,7 +32,7 @@ const NavBar = () => {
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="login.html">Login</a>
+            <Link className="nav-link" to="/login">Login</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="register.html">Signup</a>
